@@ -30,9 +30,9 @@ class BatteryOptimizer:
         model.charge_indicator = pyo.Var(model.T, within=pyo.Binary, doc='Charge/discharge indicator')
 
         # Objective function: maximize profit
-        def pbj_rule(model):
+        def obj_rule(model):
             return sum(self.prices[t] * (model.P_discharge[t] - model.P_charge[t]) for t in model.T)
-        model.profit = pyo.Objective(rule=pbj_rule, sense=pyo.maximize)
+        model.profit = pyo.Objective(rule=obj_rule, sense=pyo.maximize)
 
         # Constraints: SOC Dynamics
         def soc_rule(model, t):
