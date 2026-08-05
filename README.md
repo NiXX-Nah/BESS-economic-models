@@ -1,5 +1,10 @@
 # Electricity Energy Storage Market Analytics and Optimisation 
 
+
+### Work in Progress
+
+This repository serves as portfolio of my research in electricity market modelling and battery energy storage optimisation. New projects, documentation, and code will be added as they are refined and prepared for public release. 
+
 ## Overview
 
 This repository showcases research and modelling work on energy storage systems in electricity markets.
